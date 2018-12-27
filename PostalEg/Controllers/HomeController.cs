@@ -9,18 +9,18 @@ namespace PostalEg.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
-        //public ActionResult Index()
+        //GET: Home
+        public ActionResult Index()
 
-        //{
-        //    dynamic email = new Email("example");
-        //    email.To = "sarath.bu@pitsolutions.com";
-        //    //email.FunnyLink();
-        //    email.Send();
-        //    return View();
-        //}
+        {
+            dynamic email = new Email("example");
+            email.To = "sarath.bu@pitsolutions.com";
+            //email.FunnyLink();
+            email.Send();
+            return View();
+        }
 
-        public ActionResult Display()
+    public ActionResult Display()
         {
             return View();
         }
